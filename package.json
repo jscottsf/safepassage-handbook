@@ -10,6 +10,7 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "copy-dist": "rm -r ../safepassage-handbook-dist/* && cp -R dist/ ../safepassage-handbook-dist",
     "precommit": "npm run lint"
   },
   "dependencies": {
