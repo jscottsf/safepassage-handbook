@@ -11,13 +11,13 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Best Practices</a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <router-link class="dropdown-item" to="general">General</router-link>
-              <router-link class="dropdown-item" to="awareness">Awareness</router-link>
-              <router-link class="dropdown-item" to="communication">Communication</router-link>
-              <router-link class="dropdown-item" to="movement">Movement</router-link>
-              <router-link class="dropdown-item" to="presence">Presence</router-link>
-              <router-link class="dropdown-item" to="crosswalk">Crosswalk</router-link>
-              <router-link class="dropdown-item" to="equipment">Equipment</router-link>
+              <router-link class="dropdown-item" :to="{name: 'general'}">General</router-link>
+              <router-link class="dropdown-item" :to="{name: 'awareness'}">Awareness</router-link>
+              <router-link class="dropdown-item" :to="{name: 'communication'}">Communication</router-link>
+              <router-link class="dropdown-item" :to="{name: 'movement'}">Movement</router-link>
+              <router-link class="dropdown-item" :to="{name: 'presence'}">Presence</router-link>
+              <router-link class="dropdown-item" :to="{name: 'crosswalk'}">Crosswalk</router-link>
+              <router-link class="dropdown-item" :to="{name: 'equipment'}">Equipment</router-link>
             </div>
           </li>
         </ul>
@@ -26,9 +26,9 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Radio</a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <router-link class="dropdown-item" to="radio-instructions">Instructions</router-link>
-              <router-link class="dropdown-item" to="radio-protocols">Protocols</router-link>
-              <router-link class="dropdown-item" to="radio-testing">Testing</router-link>
+              <router-link class="dropdown-item" :to="{name: 'radio-instructions'}">Instructions</router-link>
+              <router-link class="dropdown-item" :to="{name: 'radio-protocols'}">Protocols</router-link>
+              <router-link class="dropdown-item" :to="{name: 'radio-testing'}">Testing</router-link>
             </div>
           </li>
         </ul>
