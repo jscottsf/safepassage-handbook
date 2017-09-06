@@ -11,7 +11,7 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: '/safepassage-bootstrap/dist/css/bootstrap.css' }
+      { rel: 'stylesheet', href: 'safepassage-bootstrap/dist/css/bootstrap.css' }
     ],
     script: [
       {
@@ -23,7 +23,7 @@ module.exports = {
       { src: 'https://use.fontawesome.com/a6ba001ef0.js', type: 'text/javascript' },
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js', type: 'text/javascript' },
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js', type: 'text/javascript' },
-      { src: '/safepassage-bootstrap/dist/js/bootstrap.js', type: 'text/javascript' }
+      { src: 'safepassage-bootstrap/dist/js/bootstrap.js', type: 'text/javascript' }
     ]
   },
   /*
