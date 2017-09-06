@@ -47,5 +47,9 @@ module.exports = {
         })
       }
     }
+  },
+  router: {
+    base: '/safepassage-handbook/'
+    // mode: 'hash'
   }
 }
