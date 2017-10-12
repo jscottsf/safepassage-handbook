@@ -9,7 +9,7 @@
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Best Practices</a>
+            <a class="nav-link dropdown-toggle" href="/" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Best Practices</a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
               <router-link class="dropdown-item" :to="{name: 'general'}">General</router-link>
               <router-link class="dropdown-item" :to="{name: 'awareness'}">Awareness</router-link>
@@ -22,13 +22,22 @@
           </li>
         </ul>
 
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Radio</a>
+            <a class="nav-link dropdown-toggle" href="/" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Radio</a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
               <router-link class="dropdown-item" :to="{name: 'radio-instructions'}">Instructions</router-link>
               <router-link class="dropdown-item" :to="{name: 'radio-protocols'}">Protocols</router-link>
               <router-link class="dropdown-item" :to="{name: 'radio-testing'}">Testing</router-link>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Fun</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <router-link class="dropdown-item" :to="{name: 'interactive-bestpracticeguess'}">Best Practice Guess</router-link>
             </div>
           </li>
         </ul>
