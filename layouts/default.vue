@@ -35,7 +35,7 @@
 
         <ul class="navbar-nav mr-auto">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="/" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Fun</a>
+            <a class="nav-link dropdown-toggle" href="/" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Misc</a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
               <router-link class="dropdown-item" :to="{name: 'interactive-bestpracticeguess'}">Best Practice Guess</router-link>
             </div>
