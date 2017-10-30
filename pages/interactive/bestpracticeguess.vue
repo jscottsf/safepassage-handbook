@@ -4,7 +4,11 @@
       <div class="col-12 pt-4 text-center" v-for="text in texts">
         <div class="card" :class="cardClass">
           <div class="card-block">
-            <samp class="card-title display-3" style="letter-spacing: 0.1em">{{ text }}</samp>
+            <samp class="card-title display-3" style="letter-spacing: 0.1em;">
+              <mark class="d-inline-block mx-2 my-2" v-for="word in text">
+                {{ word }}
+              </mark>
+            </samp>
           </div>
         </div>
       </div>
@@ -217,6 +221,12 @@ export default {
           }
         }
       ],
+      surprise: {
+        translations: {
+          en: 'Kate is pregnant',
+          es: 'Kate esta embarazada'
+        }
+      },
       current: {},
       hidden: [],
       texts: []
@@ -236,7 +246,7 @@ export default {
   methods: {
     updateTexts () {
       this.texts = Object.entries(this.current.translations).map(([lang, text]) => {
-        return Array.from(text).map(c => this.hidden.includes(c) ? '_' : c).join('')
+        return Array.from(text).map(c => this.hidden.includes(c) ? '_' : c).join('').split(' ')
       })
     },
     next () {
@@ -249,6 +259,11 @@ export default {
 
       this.current = avails[random(0, avails.length - 1)]
       this.current.isDone = true
+
+      // Override for the surprise!
+      if ((this.items.length - avails.length) === 7) {
+        this.current = this.surprise
+      }
 
       this.hidden = [...new Set(Object.entries(this.current.translations).reduce((ary, [lang, text]) => {
         return ary.concat(Array.from(text))
