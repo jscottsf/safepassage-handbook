@@ -221,12 +221,6 @@ export default {
           }
         }
       ],
-      surprise: {
-        translations: {
-          en: 'Kate is pregnant',
-          es: 'Kate esta embarazada'
-        }
-      },
       current: {},
       hidden: [],
       texts: []
@@ -259,11 +253,6 @@ export default {
 
       this.current = avails[random(0, avails.length - 1)]
       this.current.isDone = true
-
-      // Override for the surprise!
-      if ((this.items.length - avails.length) === 7) {
-        this.current = this.surprise
-      }
 
       this.hidden = [...new Set(Object.entries(this.current.translations).reduce((ary, [lang, text]) => {
         return ary.concat(Array.from(text))
