@@ -47,8 +47,8 @@ export default {
           a: 'S side of Turk between Hyde and Larkin',
           h: PLACE_HINT
         }, {
-          q: 'Hyde Grocery',
-          a: 'NW corner of Turk and Hyde',
+          q: 'Hyde/Turk Grocery',
+          a: 'SW corner of Turk and Hyde',
           h: CORNER_HINT
         }, {
           q: 'Mini Park',
@@ -87,7 +87,7 @@ export default {
           a: 'S side of Turk between Jones and Leavenworth',
           h: PLACE_HINT
         }, {
-          q: 'Turk Street Apartments',
+          q: '201 Turk Street Apartments',
           a: 'S side of Turk between Jones and Leavenworth',
           h: PLACE_HINT
         }, {
@@ -107,11 +107,11 @@ export default {
           a: 'SW corner of Turk and Jones',
           h: CORNER_HINT
         }, {
-          q: 'Boys and Girls Clubs',
+          q: 'Boys & Girls Clubs TL Clubhouse',
           a: 'W side of Jones between Golden Gate and Turk',
           h: PLACE_HINT
         }, {
-          q: 'Jones Street Apartments',
+          q: '111 Jones Street Apartments',
           a: 'NW corner of Golden Gate and Jones',
           h: CORNER_HINT
         }, {
@@ -123,7 +123,7 @@ export default {
           a: 'SW corner of Eddy and Jones',
           h: CORNER_HINT
         }, {
-          q: 'SF City Impact',
+          q: 'SF City Impact - Rescue Mission',
           a: 'E side of Jones between Turk and Eddy',
           h: PLACE_HINT
         }, {
@@ -131,7 +131,7 @@ export default {
           a: 'NE corner of Eddy and Jones',
           h: CORNER_HINT
         }, {
-          q: 'Glide Foundation',
+          q: 'Glide Family Resource Center',
           a: 'N side of Ellis between Jones and Leavenworth',
           h: PLACE_HINT
         }, {
@@ -140,8 +140,8 @@ export default {
           h: PLACE_HINT
         }, {
           q: 'Jessica Silverman Gallery',
-          a: 'N side of Ellis between Jones and Leavenworth',
-          h: PLACE_HINT
+          a: 'NE corner of Ellis and Leavenworth',
+          h: CORNER_HINT
         }, {
           q: 'Amigo\'s Market',
           a: 'NW corner of Ellis and Leavenworth',
@@ -191,13 +191,9 @@ export default {
           a: 'NW corner of Turk and Jones',
           h: CORNER_HINT
         }, {
-          q: 'Tobacco & Market',
+          q: 'T & L Market',
           a: 'SW corner of Turk and Leavenworth',
           h: CORNER_HINT
-        }, {
-          q: 'Tenderloin Housing Clinic',
-          a: 'N side of Turk between Hyde and Larkin',
-          h: PLACE_HINT
         }, {
           q: 'Tsunami Market',
           a: 'S side of Turk between Hyde and Larkin',
