@@ -212,7 +212,7 @@ export default {
           h: CORNER_HINT
         }, {
           q: 'Group 4 (PM)',
-          a: 'NW corner of Ellis and Leavenworth',
+          a: 'NE corner of Ellis and Leavenworth',
           h: CORNER_HINT
         }, {
           q: 'Group 5 (PM)',
