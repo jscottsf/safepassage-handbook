@@ -1,54 +1,43 @@
 <template>
-  <section class="container-fluid">
-    <div class="row">
-      <div class="col-12" style="background-color: #111111; height: 80vh;" ref="cloud">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12" style="height: 20vh;">
-        <input type="text"
-          class="form-control"
-          placeholder="words"
-          style="border: none; font-size: 150%; font-weight: 300; border-radius: 0; height: 100%"
-          v-model="inputText">
-      </div>
-    </div>
+  <section class="vh-100 d-flex flex-column">
+    <div class="h-100" style="background-color: #111111;" ref="cloud" />
+
+    <input type="text"
+      class="form-control"
+      placeholder="word, word, ..."
+      style="border: none; font-size: 150%; font-weight: 300; border-radius: 0; xheight: 100%"
+      v-model="inputText">
   </section>
 </template>
 
 <script>
-import debounce from 'lodash.debounce'
-// import random from 'lodash/random'
+import chroma from 'chroma-js'
+import debounce from 'lodash/debounce'
+import shuffle from 'lodash/shuffle'
 
 const $ = global.$
 
 export default {
   data () {
     return {
+      colors: shuffle([...chroma.brewer.Blues, ...chroma.brewer.YlGn, ...chroma.brewer.YlOrRd, ...chroma.brewer.PuRd, ...chroma.brewer.BuGn].map(color => {
+        return chroma(color).luminance(0.5, 'hsl')
+      })),
+
       inputText: ''
     }
   },
 
   created () {
     this.debouncedUpdate = debounce(() => {
-      const words = this.inputText.split(' ').map((text, i, arr) => {
-        return {
-          text,
-          weight: (i + 1) / arr.length
-        }
-      })
-
-      $(this.$refs.cloud).jQCloud('update', words)
+      $(this.$refs.cloud).jQCloud('update', this.words)
     }, 400)
   },
 
   mounted () {
-    const words = [
-      {text: 'Safe', weight: 50},
-      {text: 'Passage', weight: 50}
-    ]
+    console.log('colors', this.colors)
 
-    $(this.$refs.cloud).jQCloud(words, {
+    $(this.$refs.cloud).jQCloud(this.words, {
       autoResize: true,
       fontSize: {
         from: 0.06,
@@ -57,11 +46,27 @@ export default {
     })
   },
 
-  // computed: {
-  // },
+  computed: {
+    words () {
+      const words = this.inputText.split(',').map(text => {
+        return text.trim()
+      }).filter(text => {
+        return text.length > 0
+      }).map((text, i, arr) => {
+        return {
+          color: this.colors[i % this.colors.length],
+          text,
+          weight: (i + 1) / arr.length
+        }
+      })
 
-  // methods: {
-  // },
+      if (words.length) return words
+
+      return [
+        {text: 'Safe Passage', weight: 1}
+      ]
+    }
+  },
 
   watch: {
     inputText () {
