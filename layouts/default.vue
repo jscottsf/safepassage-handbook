@@ -38,6 +38,7 @@
             <a class="nav-link dropdown-toggle" href="/" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Misc</a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
               <router-link class="dropdown-item" :to="{name: 'interactive-bestpracticeguess'}">Best Practice Guess</router-link>
+              <router-link class="dropdown-item" :to="{name: 'interactive-bestpracticereview'}">Best Practice Review</router-link>
               <router-link class="dropdown-item" :to="{name: 'interactive-placedirectional'}">Places / Directional</router-link>
               <router-link class="dropdown-item" :to="{name: 'interactive-wordcloud'}">Word Cloud</router-link>
             </div>
