@@ -12,19 +12,28 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: '/safepassage-handbook/safepassage-bootstrap/dist/css/bootstrap.css' },
+
+      // For purely offline
+      { rel: 'stylesheet', href: '/safepassage-handbook/vendor/font-awesome/css/font-awesome.min.css' },
+
       { rel: 'stylesheet', href: '/safepassage-handbook/vendor/jqcloud/jqcloud.min.css' }
     ],
     script: [
-      {
-        src: 'https://code.jquery.com/jquery-3.2.1.min.js',
-        integrity: 'sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=',
-        crossorigin: 'anonymous',
-        type: 'text/javascript'
-      },
-      { src: 'https://use.fontawesome.com/a6ba001ef0.js', type: 'text/javascript' },
-      { src: 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js', type: 'text/javascript' },
-      { src: 'https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js', type: 'text/javascript' },
+      // For purely offline
+      // {
+      //   src: 'https://code.jquery.com/jquery-3.2.1.min.js',
+      //   integrity: 'sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=',
+      //   crossorigin: 'anonymous',
+      //   type: 'text/javascript'
+      // },
+      // { src: 'https://use.fontawesome.com/a6ba001ef0.js', type: 'text/javascript' },
+      // { src: 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js', type: 'text/javascript' },
+      // { src: 'https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js', type: 'text/javascript' },
+      { src: '/safepassage-handbook/vendor/jquery/jquery-3.2.1.min.js', type: 'text/javascript' },
+      { src: '/safepassage-handbook/vendor/tether/tether.min.js', type: 'text/javascript' },
+      { src: '/safepassage-handbook/vendor/velocity/velocity.min.js', type: 'text/javascript' },
       { src: '/safepassage-handbook/safepassage-bootstrap/dist/js/bootstrap.js', type: 'text/javascript' },
+
       { src: '/safepassage-handbook/vendor/jqcloud/jqcloud.min.js', type: 'text/javascript' }
     ]
   },

@@ -25,14 +25,9 @@
 </template>
 
 <script>
-import bestPractices from '../../../data/bestPractices.json'
-// import {mapState} from 'vuex'
+import {mapGetters} from 'vuex'
 
 export default {
-  data () {
-    return {bestPractices}
-  },
-
   mounted: function () {
     document.addEventListener('keydown', this.onKeyDown)
   },
@@ -41,9 +36,9 @@ export default {
     document.removeEventListener('keydown', this.onKeyDown)
   },
 
-  // computed: mapState([
-  //   'bestPractices'
-  // ]),
+  computed: mapGetters([
+    'bestPractices'
+  ]),
 
   methods: {
     onKeyDown (event) {

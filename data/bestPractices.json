@@ -22,6 +22,9 @@
               }
             },
             {
+              "exclude": [
+                "public"
+              ],
               "left": {
                 "en": "Strive to model safe behavior",
                 "es": "Esforzarse de tener una conducta y modelo de seguridad"
@@ -29,6 +32,15 @@
               "right": {
                 "en": "We are “brand ambassadors” for neighborhood safety and Safe Passage.",
                 "es": "Somos los “embajadores distinguidos” para la seguridad del vecindario y Pasaje Seguro."
+              }
+            },
+            {
+              "include": [
+                "public"
+              ],
+              "left": {
+                "en": "Strive to model safe behavior",
+                "es": "Esforzarse de tener una conducta y modelo de seguridad"
               }
             },
             {
@@ -45,6 +57,9 @@
           "slug": "always"
         },
         {
+          "exclude": [
+            "public"
+          ],
           "heading": {
             "en": "Corners & Passages",
             "es": "Esquinas & Pasajes"
@@ -94,7 +109,7 @@
             {
               "left": {
                 "en": "All directions, often",
-                "es": "A todas direcciones, contantemente"
+                "es": "A todas direcciones, constantemente"
               },
               "right": {
                 "en": "Be aware of situations before they approach you.",
@@ -128,9 +143,21 @@
               }
             },
             {
+              "exclude": [
+                "public"
+              ],
               "left": {
                 "en": "Look out for your partner",
                 "es": "Cuide a su compañero"
+              }
+            },
+            {
+              "include": [
+                "public"
+              ],
+              "left": {
+                "en": "Look out for your family",
+                "es": "Cuide a su familia"
               }
             },
             {
@@ -173,9 +200,25 @@
               }
             },
             {
+              "exclude": [
+                "public"
+              ],
               "left": {
                 "en": "For anything unusual",
                 "es": "Por algo inusual"
+              }
+            },
+            {
+              "include": [
+                "public"
+              ],
+              "left": {
+                "en": "For anything unusual",
+                "es": "Por algo inusual"
+              },
+              "right": {
+                "en": "Be ready to change your plans",
+                "es": "Este listo para cambiar sus planes"
               }
             },
             {
@@ -191,9 +234,25 @@
               }
             },
             {
+              "exclude": [
+                "public"
+              ],
               "left": {
                 "en": "Avoid phone (exception 311 or  911)",
                 "es": "Evite el teléfono (excepción 311 o 911)"
+              },
+              "right": {
+                "en": "Call 911 covertly if needed. Don’t announce it to everyone on the street.",
+                "es": "Llame al 911 discretamente si es necesario. No lo anuncie a todos en la calle."
+              }
+            },
+            {
+              "include": [
+                "public"
+              ],
+              "left": {
+                "en": "Avoid phone (exception 911)",
+                "es": "Evite el teléfono (excepción 911)"
               },
               "right": {
                 "en": "Call 911 covertly if needed. Don’t announce it to everyone on the street.",
@@ -207,6 +266,9 @@
               }
             },
             {
+              "exclude": [
+                "public"
+              ],
               "left": {
                 "en": "Ask if unclear",
                 "es": "Pregunte si algo no está claro"
@@ -222,10 +284,13 @@
         {
           "heading": {
             "en": "Know",
-            "es": "Conoce"
+            "es": "Conosca"
           },
           "items": [
             {
+              "exclude": [
+                "public"
+              ],
               "left": {
                 "en": "“What” to look for",
                 "es": "“Que” buscar"
@@ -246,12 +311,18 @@
               }
             },
             {
+              "exclude": [
+                "public"
+              ],
               "left": {
                 "en": "The laws",
                 "es": "Las leyes"
               }
             },
             {
+              "exclude": [
+                "public"
+              ],
               "left": {
                 "en": "The risks",
                 "es": "Los riesgos"
@@ -289,12 +360,18 @@
               }
             },
             {
+              "exclude": [
+                "public"
+              ],
               "left": {
                 "en": "Professional",
                 "es": "Profesional"
               }
             },
             {
+              "exclude": [
+                "public"
+              ],
               "left": {
                 "en": "Clear and concise",
                 "es": "Claro y conciso"
@@ -305,6 +382,18 @@
               }
             },
             {
+              "include": [
+                "public"
+              ],
+              "left": {
+                "en": "Use your voice",
+                "es": "Usa tu voz"
+              }
+            },
+            {
+              "exclude": [
+                "public"
+              ],
               "left": {
                 "en": "Open with team",
                 "es": "Sea franco con el equipo"
@@ -325,6 +414,9 @@
               }
             },
             {
+              "exclude": [
+                "public"
+              ],
               "left": {
                 "en": "Positive engagement",
                 "es": "Compromiso positivo"
@@ -344,6 +436,9 @@
           },
           "items": [
             {
+              "exclude": [
+                "public"
+              ],
               "left": {
                 "en": "Confident posture",
                 "es": "Postura confiada"
@@ -360,7 +455,7 @@
               },
               "right": {
                 "en": "Don’t slouch or look “bored.”",
-                "es": "No te encojas o que te mires “aburrido.”"
+                "es": "No te encojas o te mires “aburrido.”"
               }
             },
             {
@@ -409,6 +504,9 @@
               }
             },
             {
+              "exclude": [
+                "public"
+              ],
               "left": {
                 "en": "Leverage teams and support resources",
                 "es": "Aproveche a los equipos y recursos de apoyo"
@@ -419,6 +517,22 @@
               }
             },
             {
+              "include": [
+                "public"
+              ],
+              "left": {
+                "en": "Leverage family and support resources",
+                "es": "Aproveche a su familia y recursos de apoyo"
+              },
+              "right": {
+                "en": "If something is “pushing your buttons,” defer to others for guidance and support.",
+                "es": "Si algo “está molestándolo” diríjase a otros para orientación y apoyo."
+              }
+            },
+            {
+              "exclude": [
+                "public"
+              ],
               "left": {
                 "en": "Balance sensitivity with honesty in awkward situations",
                 "es": "Equilibre la sensibilidad con honestidad en situaciones incomodas"
@@ -466,6 +580,9 @@
               }
             },
             {
+              "exclude": [
+                "public"
+              ],
               "left": {
                 "en": "Dynamic and interactive",
                 "es": "Dinámico e interactivo"
@@ -614,7 +731,7 @@
             {
               "left": {
                 "en": "Don’t overreact",
-                "es": "So sobre reaccione"
+                "es": "No sobre reaccione"
               },
               "right": {
                 "en": "Stay calm.",
@@ -653,6 +770,9 @@
               }
             },
             {
+              "exclude": [
+                "public"
+              ],
               "left": {
                 "en": "Assertive, not offensive",
                 "es": "Asertivo, no ofensivo"
@@ -669,6 +789,9 @@
               }
             },
             {
+              "exclude": [
+                "public"
+              ],
               "left": {
                 "en": "Have a purpose",
                 "es": "Tenga un propósito"
@@ -679,6 +802,18 @@
               }
             },
             {
+              "include": [
+                "public"
+              ],
+              "left": {
+                "en": "Have a purpose",
+                "es": "Tenga un propósito"
+              }
+            },
+            {
+              "exclude": [
+                "public"
+              ],
               "left": {
                 "en": "Establish trust",
                 "es": "Establezca confianza"
@@ -692,6 +827,9 @@
           "slug": "always"
         },
         {
+          "exclude": [
+            "public"
+          ],
           "heading": {
             "en": "Appearance",
             "es": "Apariencia"
@@ -745,6 +883,9 @@
           },
           "items": [
             {
+              "exclude": [
+                "public"
+              ],
               "left": {
                 "en": "Follow traffic signals",
                 "es": "Siga las señales de trafico"
@@ -752,6 +893,15 @@
               "right": {
                 "en": "At all times, even when heading out and back.",
                 "es": "Todo el tiempo, incluso a la salida y al regreso."
+              }
+            },
+            {
+              "include": [
+                "public"
+              ],
+              "left": {
+                "en": "Follow traffic signals",
+                "es": "Siga las señales de trafico"
               }
             },
             {
@@ -765,6 +915,9 @@
               }
             },
             {
+              "exclude": [
+                "public"
+              ],
               "left": {
                 "en": "Do not block crosswalk",
                 "es": "No obstruya el cruce de peatones"
@@ -791,6 +944,9 @@
               }
             },
             {
+              "exclude": [
+                "public"
+              ],
               "left": {
                 "en": "Keep sign up at all times",
                 "es": "Manténgase en todo momento"
@@ -810,6 +966,9 @@
           },
           "items": [
             {
+              "exclude": [
+                "public"
+              ],
               "left": {
                 "en": "Use caution if cars are in crosswalk",
                 "es": "Use precaución si hay carros en el cruce de peatones"
@@ -820,6 +979,18 @@
               }
             },
             {
+              "include": [
+                "public"
+              ],
+              "left": {
+                "en": "Use caution if cars are in crosswalk",
+                "es": "Use precaución si hay carros en el cruce de peatones"
+              }
+            },
+            {
+              "exclude": [
+                "public"
+              ],
               "left": {
                 "en": "Make multiple trips into crosswalk for pedestrian flow, and to allow cars to turn",
                 "es": "Haga viajes múltiples hacia el cruce de peatones cuando haya mucha gente, para permitirle a los carros a dar vuelta en el cruce"
@@ -833,6 +1004,9 @@
           "slug": "cars"
         },
         {
+          "exclude": [
+            "public"
+          ],
           "heading": {
             "en": "Teamwork",
             "es": "Trabajo de equipo"
@@ -885,6 +1059,9 @@
     {
       "color_dark": "#666666",
       "color_light": "#999999",
+      "exclude": [
+        "public"
+      ],
       "heading": {
         "en": "Equipment",
         "es": "Equipo"
@@ -1019,8 +1196,8 @@
                 "es": "Conozca los Códigos y Protocolos de Radio"
               },
               "right": {
-                "en": "Codes: Orange, Yellow, Silver, Brown, Other. \u2460\u00A0Group, \u2461\u00A0Code, \u2462\u00A0Location, \u2463\u00A0Details, \u2464\u00A0Action.",
-                "es": "Códigos: Naranja, Amarillo, Plata, Cafe, Otros. \u2460\u00A0Grupo, \u2461\u00A0Código, \u2462\u00A0Ubicación, \u2463\u00A0Detalles, \u2464\u00A0Acción."
+                "en": "Codes: Orange, Yellow, Silver, Brown, Other. ① Group, ② Code, ③ Location, ④ Details, ⑤ Action.",
+                "es": "Códigos: Naranja, Amarillo, Plata, Cafe, Otros. ① Grupo, ② Código, ③ Ubicación, ④ Detalles, ⑤ Acción."
               }
             }
           ],
