@@ -41,6 +41,9 @@
               <router-link class="dropdown-item" :to="{name: 'interactive-bestpracticereview'}">Best Practice Review</router-link>
               <router-link class="dropdown-item" :to="{name: 'interactive-placedirectional'}">Places / Directional</router-link>
               <router-link class="dropdown-item" :to="{name: 'interactive-wordcloud'}">Word Cloud</router-link>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" role="button" @click.prevent="setFilterTag('public')"><i class="fa fa-check" :class="[filterTag === 'public' ? '' : 'invisible']" aria-hidden="true"></i> Public</a>
+              <a class="dropdown-item" role="button" @click.prevent="setFilterTag('internal')"><i class="fa fa-check" :class="[filterTag === 'internal' ? '' : 'invisible']" aria-hidden="true"></i> Internal</a>
             </div>
           </li>
         </ul>
@@ -50,6 +53,22 @@
     <nuxt/>
   </div>
 </template>
+
+<script>
+import {mapGetters, mapMutations} from 'vuex'
+
+export default {
+  computed: mapGetters([
+    'filterTag'
+  ]),
+
+  methods: {
+    ...mapMutations({
+      setFilterTag: 'setFilterTag'
+    })
+  }
+}
+</script>
 
 <style>
 .pt-header {

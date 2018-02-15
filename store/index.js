@@ -3,7 +3,7 @@ import bestPractices from '../data/bestPractices.json'
 export const state = () => ({
   bestPractices,
 
-  filterTag: 'public'
+  filterTag: 'internal'
 })
 
 export const getters = {
@@ -25,6 +25,10 @@ export const getters = {
         })
       })
     }
+  },
+
+  filterTag (state) {
+    return state.filterTag
   }
 }
 

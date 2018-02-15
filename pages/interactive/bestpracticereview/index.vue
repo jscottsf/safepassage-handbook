@@ -37,7 +37,8 @@ export default {
   },
 
   computed: mapGetters([
-    'bestPractices'
+    'bestPractices',
+    'filterTag'
   ]),
 
   methods: {
@@ -70,6 +71,14 @@ export default {
           sectionSlug: bestPractices.areas[0].sections[0].slug,
           itemId: 1
         }
+      })
+    }
+  },
+
+  watch: {
+    filterTag () {
+      this.$router.push({
+        name: 'interactive-bestpracticereview'
       })
     }
   }

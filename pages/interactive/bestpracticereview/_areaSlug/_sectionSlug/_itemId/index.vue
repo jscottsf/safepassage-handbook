@@ -65,7 +65,8 @@ export default {
 
   computed: {
     ...mapGetters([
-      'bestPractices'
+      'bestPractices',
+      'filterTag'
     ]),
 
     area () {
@@ -190,6 +191,14 @@ export default {
           name: 'interactive-bestpracticereview'
         })
       }
+    }
+  },
+
+  watch: {
+    filterTag () {
+      this.$router.push({
+        name: 'interactive-bestpracticereview'
+      })
     }
   }
 }
